@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.25)  25 FEB 2022 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.25)  25 FEB 2022 22:32
 entering extended mode
 **"c:/Users/ollie/OneDrive - Exeter College/Neural Networks/poster/Poster.tex"
 (c:/Users/ollie/OneDrive - Exeter College/Neural Networks/poster/Poster.tex
@@ -612,11 +612,11 @@ File: assets/feed forward.png Graphic file (type png)
 <use assets/feed forward.png>
 Package pdftex.def Info: assets/feed forward.png  used on input line 149.
 (pdftex.def)             Requested size: 315.25168pt x 170.62206pt.
-<assets/convolutional.jpeg, id=8, 1259.70625pt x 425.59pt>
-File: assets/convolutional.jpeg Graphic file (type jpg)
-<use assets/convolutional.jpeg>
-Package pdftex.def Info: assets/convolutional.jpeg  used on input line 159.
-(pdftex.def)             Requested size: 315.25168pt x 106.50763pt.
+<assets/convolutional2.jpeg, id=8, 1405.25pt x 751.80875pt>
+File: assets/convolutional2.jpeg Graphic file (type jpg)
+<use assets/convolutional2.jpeg>
+Package pdftex.def Info: assets/convolutional2.jpeg  used on input line 159.
+(pdftex.def)             Requested size: 315.25168pt x 168.65639pt.
 <assets/multilayer perceptron.png, id=9, 846.16125pt x 539.01375pt>
 File: assets/multilayer perceptron.png Graphic file (type png)
 <use assets/multilayer perceptron.png>
@@ -642,33 +642,29 @@ File: assets/sample_predictions.png Graphic file (type png)
 <use assets/sample_predictions.png>
 Package pdftex.def Info: assets/sample_predictions.png  used on input line 272.
 (pdftex.def)             Requested size: 315.25168pt x 39.50294pt.
-No file Poster.bbl.
-
-Overfull \vbox (5.1789pt too high) has occurred while \output is active []
-
- [1
+[1
 
 
 Non-PDF special ignored!
 <special> header=./a0header.ps
 Non-PDF special ignored!
 <special> papersize=59.4cm,83.96cm
-{C:/Users/ollie/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./emsnew.PNG> <./assets/perceptron.png> <./assets/feed forward.png (PNG copy)> <./assets/convolutional.jpeg> <./assets/multilayer perceptron.png> <./assets/loss.png> <./assets/sample_predictions.png>] (Poster.aux)
+{C:/Users/ollie/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./emsnew.PNG> <./assets/perceptron.png> <./assets/feed forward.png (PNG copy)> <./assets/convolutional2.jpeg> <./assets/multilayer perceptron.png> <./assets/loss.png> <./assets/sample_predictions.png>] (Poster.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.48001pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 24995 strings out of 479334
- 642677 string characters out of 2857084
- 1099075 words of memory out of 3000000
- 42044 multiletter control sequences out of 15000+200000
+ 24992 strings out of 479334
+ 642661 string characters out of 2857084
+ 1085075 words of memory out of 3000000
+ 42042 multiletter control sequences out of 15000+200000
  423980 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,10n,102p,786b,2083s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Poster.pdf (1 page, 636266 bytes).
+Output written on Poster.pdf (1 page, 725723 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
