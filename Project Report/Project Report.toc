@@ -1,0 +1,51 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}What is a neural network?}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Project Goal}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}What are neural networks used for?}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}What are the different types of neural networks?}{4}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Perceptron}{4}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Feed Forward Neural Network}{4}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Multi-Layer Perceptron}{5}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Convolutional Neural Network}{5}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}Recurrent Neural Network}{5}{subsubsection.1.4.5}%
+\contentsline {subsubsection}{\numberline {1.4.6}Long Short-Term Memory}{6}{subsubsection.1.4.6}%
+\contentsline {subsection}{\numberline {1.5}Motivation}{6}{subsection.1.5}%
+\contentsline {section}{\numberline {2}The History of Neural Networks}{7}{section.2}%
+\contentsline {section}{\numberline {3}Bias in Artificial Intelligence}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}What causes bias in AI?}{9}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Data Bias}{9}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Societal Bias}{9}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Examples of Bias in AI}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}PortraitAI Art Generator}{9}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Twitter Photo Cropping}{10}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}How Neural Networks Work}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Structure}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Forward Propagation}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Activation Functions}{12}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Sigmoid}{12}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Tanh}{13}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}ReLU}{13}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Leaky ReLU}{13}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}Loss Function}{14}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Mean Squared Error}{15}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Cross Entropy Loss}{15}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Backpropagation}{15}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Training}{16}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Coding a Neural Network}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Data}{17}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Splitting the Data}{17}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Defining the Model}{17}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Layers}{17}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Loss Function}{17}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Activation Function}{18}{subsubsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.4}Training the Model}{18}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Over Fitting}{19}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}The Curst of Dimensionality}{19}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Local Minima}{19}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.5}Testing the Model}{19}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Discussion of Results}{19}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Conclusion}{21}{section.6}%
+\contentsline {section}{\numberline {7}Appendix}{22}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Vector Dot Product}{22}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}MNIST Dataset}{22}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Code}{24}{subsection.7.3}%
