@@ -1,6 +1,6 @@
-PWD c:\Users\ollie\OneDrive - Exeter College\EMC-Y13\poster
+PWD c:\Users\ollie\OneDrive - Exeter College\Neural Networks\poster
 INPUT C:\Users\ollie\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\ollie\OneDrive - Exeter College\EMC-Y13\poster\Poster.tex
+INPUT c:\Users\ollie\OneDrive - Exeter College\Neural Networks\poster\Poster.tex
 OUTPUT Poster.log
 INPUT .\a1poster.cls
 INPUT .\a1poster.cls

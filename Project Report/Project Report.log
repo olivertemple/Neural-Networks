@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.25)  25 FEB 2022 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.25)  25 FEB 2022 16:31
 entering extended mode
-**"c:/Users/ollie/OneDrive - Exeter College/EMC-Y13/Project Report/Project Report.tex"
-(c:/Users/ollie/OneDrive - Exeter College/EMC-Y13/Project Report/Project Report.tex
+**"c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex"
+(c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03> (C:\Users\ollie\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -864,14 +864,14 @@ Package rerunfilecheck Info: File `"Project Report".out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  33479 strings out of 479334
- 799922 string characters out of 2857084
+ 800018 string characters out of 2857084
  1674164 words of memory out of 3000000
  50216 multiletter control sequences out of 15000+200000
  410785 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,16n,103p,10282b,2102s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 102i,16n,103p,10290b,2102s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ollie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Project Report.pdf" (28 pages, 684222 bytes).
+Output written on "Project Report.pdf" (28 pages, 684188 bytes).
 PDF statistics:
  674 PDF objects out of 1000 (max. 8388607)
  212 named destinations out of 1000 (max. 500000)
