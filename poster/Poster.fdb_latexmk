@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1645829461 "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/poster/Poster.tex" "Poster.pdf" "Poster" 1645829466
+["pdflatex"] 1645958134 "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/poster/Poster.tex" "Poster.pdf" "Poster" 1645958140
   "C:/Users/ollie/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1619341869 9407463 889c608613aee6593d345564004d0ad3 ""
   "C:/Users/ollie/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1645802111 82686 2381c3433487640bf26aa76a10db7eb2 ""
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -170,8 +170,8 @@
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1463131981 4806 ef4794ae13f75d0c199ba494bc41ff4b ""
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463131981 57049 34128738f682d033422ca125f82e5d62 ""
-  "Poster.aux" 1645829466 1612 b02476bffd45e2f767a48084f3c74604 "pdflatex"
-  "Poster.tex" 1645829460 23404 b9fd53ba952aaa67950fc288855e47a6 ""
+  "Poster.aux" 1645958139 1612 b02476bffd45e2f767a48084f3c74604 "pdflatex"
+  "Poster.tex" 1645958126 23529 3f1c26426cae9b109d43a42ea83637d8 ""
   "a1poster.cls" 1645533755 6489 faf0126e374679e11af9a1663f717517 ""
   "assets/convolutional2.jpeg" 1645828218 178474 76a7d0441d93f5ca635475db9b80ed82 ""
   "assets/feed forward.png" 1638534306 282985 0a7e467aa366bac73508e307b6187626 ""
@@ -179,10 +179,10 @@
   "assets/multilayer perceptron.png" 1638644085 36835 4712803b9cafb60e86f95b380f7d3c52 ""
   "assets/perceptron.png" 1638194219 69597 a6b4847a1ee950c4107d6d11db6e9020 ""
   "assets/sample_predictions.png" 1644959525 9619 402f3ef1dc8d43ad4707acd904478842 ""
-  "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/poster/Poster.tex" 1645829460 23404 b9fd53ba952aaa67950fc288855e47a6 ""
+  "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/poster/Poster.tex" 1645958126 23529 3f1c26426cae9b109d43a42ea83637d8 ""
   "emsnew.PNG" 1645533985 60168 481c4436620544bbe11a3ac582aac180 ""
   (generated)
   "Poster.aux"
-  "a0header.ps"
-  "Poster.log"
   "Poster.pdf"
+  "Poster.log"
+  "a0header.ps"

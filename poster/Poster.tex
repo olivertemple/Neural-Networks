@@ -130,12 +130,12 @@ There are many different types of neural networks, each with their own advantage
     \caption{Perceptron}
     \label{fig:perceptron}
 \end{wrapfigure}
-The perceptron is the simplest component of a neural network, often referred to as a neuron. It accepts weighted inputs and outputs a single output. The output of a perceptron is calculated by taking the vector dot product of the weights and the inputs:
+The perceptron is the simplest component of a neural network, often referred to as a neuron. It accepts inputs ranging between 0 and 1 and uses the weight that each connection has to calculate the output using the vector dot product of the weights and the inputs:
 \begin{equation}
-    \textbf{y} = \textbf{W}\cdot\textbf{x} + b
+    \textbf{y} = \sigma(\textbf{W}\cdot\textbf{x} + b)
     \label{eq:perceptron}
 \end{equation}
-Where $\textbf{y}$ is the output, $\textbf{W}$ is a vector of the weights, $\textbf{x}$ is a vector of the inputs, and $b$ is the bias.
+Where $\textbf{y}$ is the output, $\textbf{W}$ is a vector of the weights, $\textbf{x}$ is a vector of the inputs, $b$ is the bias and $\sigma$ is the activation function.
 
 \subsection*{Feed Forward Neural Network}
 A feed forward neural network is constructed from a set of interconnected layers. Each neuron in a layer is connected to all of the neurons in the previous layer, and the output of each layer fed forward into the next layer and used as the input. The data only travels forwards through the network, making them useful only for linear classification. Each connection has a weight, and each neuron has a bias, which are used to calculate the output of the network. The output is calculated by: 
@@ -166,7 +166,7 @@ There are many other models beyond these that each have their own uses. The ones
 
 %------------------------------------------------
 \section*{How Neural Networks Work}
-At its core, a neural network is a collection of interconnected neurons formed into layers. Each neuron has its own bias, and each connection has a weight, which are used to calculate the output of the network. For our model for classifying handwritten digits from 0-9, we will be using a multilayer perceptron.
+At its core, a neural network is a collection of interconnected neurons formed into layers. Each neuron has its own bias, and each connection has a weight, which are used to calculate the output of the network. For our model for classifying handwritten digits from 0-9, we will be using a multilayer perceptron. 
 \subsection*{Structure}
 \begin{wrapfigure}{L}{0.15\textwidth}
     \centering
@@ -175,7 +175,7 @@ At its core, a neural network is a collection of interconnected neurons formed i
     \label{fig:structure}
 \end{wrapfigure}
 The neuron with the highest output in the final layer will be the prediction of the network.
-The structure of the network is the first thing that must be defined. The input layer must consist of the same number of neurons as there are data points, and the output layer must consist of the same number of neurons as there are classification labels. There can be any number of hidden layers, which can have any number of neurons. The size and number of hidden layers should be varied to determine what sizes give the best results for the problem. 
+The structure of the network is the first thing that must be defined. The input layer must consist of the same number of neurons as there are data points (e.g. one neuron per pixel in an image), and the output layer must consist of the same number of neurons as there are classification labels (the total number of outputs). There can be any number of hidden layers, which can have any number of neurons. The size and number of hidden layers should be varied to determine what sizes give the best results for the problem. 
 
 \subsection*{Forward Propagation}
 Forward propagation is when the data is fed forward through the network to get a prediction. To calculate the output, we take the weighted sum of the inputs, add the bias add pass it though the activation function (See equation \ref{eq:feed-forward}).
