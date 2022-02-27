@@ -20,14 +20,14 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Twitter Photo Cropping}{11}{subsubsection.3.2.2}%
 \contentsline {section}{\numberline {4}How Neural Networks Work}{12}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Structure}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Forward Propagation}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Forward Propagation}{13}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Activation Functions}{13}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Sigmoid}{13}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Tanh}{14}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}Tanh}{13}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}ReLU}{14}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Leaky ReLU}{14}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.4}Leaky ReLU}{15}{subsubsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.4}Loss Function}{15}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Mean Squared Error}{16}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1}Mean Squared Error}{15}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Cross Entropy Loss}{16}{subsubsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.5}Backpropagation}{16}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Training}{17}{subsection.4.6}%

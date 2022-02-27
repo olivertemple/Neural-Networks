@@ -192,7 +192,7 @@ Despite the size of a company like Twitter, AI bias is still an issue. Twitter r
 \end{quoting}
 \newpage
 \section{How Neural Networks Work}
-At its core, a neural network is a collection of neurons, formed into layers, that are all interconnected. Each neuron has its own bias, and each connection has a weight. These parameters are what determine the output of the network. 
+At its core, a neural network is a collection of neurons, formed into layers, that are all interconnected. Each neuron has its own bias, and each connection has a weight. These parameters are what determine the output of the network. Although the diagrams below, and the concepts they portray imply a discrete physical implementation of each neuron interconnected by wires or some sort of physical signal path, in practice the neurons are implemented in software. The interconnections are implemented in practice by the passing of variables carrying the relevant information from one part of the program to another.
 
 \begin{figure}[h!]
     \includegraphics[width=\textwidth]{assets/multilayer perceptron.png}
@@ -200,12 +200,11 @@ At its core, a neural network is a collection of neurons, formed into layers, th
     \label{fig:multilayer-perceptron}
 \end{figure}
 \subsection{Structure}
-The neuron with the highest output in the final layer will be the prediction of the network. The structure of the network is the first thing that must be defined. The
-input layer must consist of the same number of neurons as there are data points, and the output layer must consist of the same number of neurons as there are classification labels. There can be any number of hidden layers, which can have any number of neurons. The size and number of hidden layers should be varied to determine what sizes give the best results for the problem
+The output implementation selects the highest output from the neurons in the final layer and discards the rest, but in successive tasks it may well be (indeed is likely) that different neurons will provide this highest output and it might have different values. The structure of the network is the first thing that must be defined. The input layer must consist of the same number of neurons as there are data points (e.g. one neuron per pixel in an image), and the output layer must consist of the same number of neurons as there are classification labels (the total number of outputs). There can be any number of hidden layers, which can have any number of neurons. The size and number of hidden layers should be varied to determine what sizes give the best results for the problem
 % For my project I will be using a multilayer perceptron (Figure~\ref{fig:multilayer-perceptron}) as it allows for back propagation to be used, while not becoming to complex, like a convolutional neural network.
 
 \subsection{Forward Propagation}
-The purpose of forward propagation is to get an output (or prediction) from our neural network. To calculate it we take the weighted sum of the inputs, and add the bias. The output of the $n^{th}$ layer can be calculated using the formula in the equation~\ref{eq:forward-propagation}.
+The purpose of forward propagation is to get an output (or prediction) from our neural network. To calculate it we use the vector dot product (Appendix~\ref{eq:vector-dot-product}) of the inputs and the weights, and add the bias. The output of the $n^{th}$ layer can be calculated using the formula in the equation~\ref{eq:forward-propagation}.
 \begin{equation}
     \textbf{y}_n = \sigma{(\textbf{W}_n\cdot\textbf{y}_{(n-1)} + \textbf{b}_n)}
     \label{eq:forward-propagation}
@@ -214,7 +213,7 @@ where $\textbf{W}_n$ is a matrix of the weights for the $n^{th}$ layer, $\textbf
 
 
 \subsection{Activation Functions}
-The activation function is applied to the output of each neuron before it is inputted into the next layer. The purpose of an activation function is to prevent the input from being too high or too low, and to add some non-linearity to the network, to prevent it from becoming an overcomplicated linear regression. There are many different activation functions to choose from, some of the more common ones are:
+The activation function is applied to the output of each neuron before it is inputted into the next layer. The purpose of an activation function is to prevent the input from being too high or too low, and to add some non-linearity to the network. There are many different activation functions to choose from, some of the more common ones are:
 \begin{itemize}
     \item Sigmoid
     \item Tanh
@@ -230,7 +229,7 @@ The sigmoid function(Figure~\ref{fig:sigmoid_function}) takes any input, $x$ and
 \begin{figure}[h!]
     \begin{center}
         \begin{tikzpicture}
-            \begin{axis}[axis x line=bottom, axis y line=middle, xmin=-6, xmax=6]
+            \begin{axis}[axis x line=bottom, axis y line=middle, xmin=-6, xmax=6, xlabel={$x$}, ylabel={$\sigma(x)$}]
             \addplot[color=red]{1/(1+exp(-x))};
             \end{axis}
         \end{tikzpicture}
@@ -249,13 +248,13 @@ Similar to the sigmoid function, the tanh function(Figure~\ref{fig:tanh}) takes 
 \begin{figure}[h!]
     \begin{center}
         \begin{tikzpicture}
-            \begin{axis}[axis x line=bottom, axis y line=middle, xmin=-6, xmax=6]
+            \begin{axis}[axis x line=bottom, axis y line=middle, xmin=-6, xmax=6, xlabel={$x$}, ylabel={$\tanh(x)$}]
             \addplot[color=red]{tanh(x)};
             \end{axis}
         \end{tikzpicture}
     \end{center}
-    \label{fig:tanh}
     \caption{Tanh Function}    
+    \label{fig:tanh}
 \end{figure}
 
 
@@ -269,7 +268,7 @@ Unlike the sigmoid function and the $\tanh$ function, the ReLU function(Figure~\
 \begin{figure}[h!]
     \begin{center}
         \begin{tikzpicture}
-            \begin{axis}[axis x line=bottom, axis y line=middle, xmin=-6, xmax=6]
+            \begin{axis}[axis x line=bottom, axis y line=middle, xmin=-6, xmax=6, xlabel={$x$}, ylabel={$\texttt{ReLU}(x)$}]
             \addplot[color=red]{max(0, x)};
             \end{axis}
         \end{tikzpicture}
@@ -287,7 +286,7 @@ The Leaky ReLU function(Figure~\ref{fig:leaky-relu}) takes any input, $x$ and if
 \begin{figure}[h!]
     \begin{center}
         \begin{tikzpicture}
-            \begin{axis}[axis x line=middle, axis y line=middle, xmin=-6, xmax=6]
+            \begin{axis}[axis x line=middle, axis y line=middle, xmin=-6, xmax=6, xlabel={$x$}, ylabel={$\texttt{Leaky ReLU}(x)$}]
             \addplot[color=red]{max(0.1*x, x)};
             \end{axis}
         \end{tikzpicture}
@@ -297,7 +296,7 @@ The Leaky ReLU function(Figure~\ref{fig:leaky-relu}) takes any input, $x$ and if
 \end{figure}
 
 \subsection{Loss Function}
-The loss function is used to calculate how good a model is. In order to calculate the loss we need the output of our network, and the expected output\cite{Loss Functions}. Similar to activation functions, there are many different loss functions to choose from, some of the more common ones are:
+The loss function is used to calculate how good a model is. In order to calculate the loss we need the output of our network, and the expected output\cite{Loss Functions}. Similar to activation functions, there are many different loss functions to choose from. Two of the more common ones are:
 \begin{itemize}
     \item Mean Squared Error (MSE)
     \item Cross Entropy Loss (or Log Loss)

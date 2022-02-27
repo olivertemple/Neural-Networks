@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.25)  25 FEB 2022 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.25)  27 FEB 2022 10:14
 entering extended mode
 **"c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex"
 (c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex
@@ -675,67 +675,71 @@ Package pdftex.def Info: assets/multilayer perceptron.png  used on input line 19
  [12pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.214 
-       <./assets/multilayer perceptron.png>] [13pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.248 \end{equation}
-                    ]
+l.208 \begin{equation}
+                       <./assets/multilayer perceptron.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+[13] [14pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.301 \begin{itemize}
-                     ] [15pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+l.278 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.304 \end{itemize}
-                   pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+l.278 \end{figure}
+                  ]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.304 \end{itemize}
-                   ]
-Underfull \hbox (badness 10000) in paragraph at lines 323--341
+l.313 \subsubsection
+                    {Cross Entropy Loss}]
+Underfull \hbox (badness 10000) in paragraph at lines 322--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--341
+Underfull \hbox (badness 10000) in paragraph at lines 322--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--341
+Underfull \hbox (badness 10000) in paragraph at lines 322--340
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16] [17pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.348 \newpage
+l.340 \subsection
+                 {Training}] [17pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.347 \newpage
               ] [18]
-<assets/loss.png, id=416, 507.8975pt x 344.28625pt>
+<assets/loss.png, id=417, 507.8975pt x 344.28625pt>
 File: assets/loss.png Graphic file (type png)
 <use assets/loss.png>
-Package pdftex.def Info: assets/loss.png  used on input line 371.
+Package pdftex.def Info: assets/loss.png  used on input line 370.
 (pdftex.def)             Requested size: 345.0pt x 233.86989pt.
  [19pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.377 
+l.376 
        <./assets/loss.png>]
-<assets/sample_predictions.png, id=427, 416.55624pt x 52.195pt>
+<assets/sample_predictions.png, id=428, 416.55624pt x 52.195pt>
 File: assets/sample_predictions.png Graphic file (type png)
 <use assets/sample_predictions.png>
-Package pdftex.def Info: assets/sample_predictions.png  used on input line 391.
+Package pdftex.def Info: assets/sample_predictions.png  used on input line 390.
 (pdftex.def)             Requested size: 345.0pt x 43.23103pt.
 
 
@@ -744,129 +748,129 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [20] [21pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.398 \newpage
+l.397 \newpage
                <./assets/sample_predictions.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 400--403
+Underfull \hbox (badness 10000) in paragraph at lines 399--402
 
  []
 
 [22]
-<assets/mnist_example.png, id=444, 578.16pt x 397.485pt>
+<assets/mnist_example.png, id=445, 578.16pt x 397.485pt>
 File: assets/mnist_example.png Graphic file (type png)
 <use assets/mnist_example.png>
-Package pdftex.def Info: assets/mnist_example.png  used on input line 453.
+Package pdftex.def Info: assets/mnist_example.png  used on input line 452.
 (pdftex.def)             Requested size: 345.0pt x 237.18277pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--471
+Underfull \hbox (badness 10000) in paragraph at lines 448--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--471
+Underfull \hbox (badness 10000) in paragraph at lines 448--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--471
+Underfull \hbox (badness 10000) in paragraph at lines 448--470
 
  []
 
 
-Overfull \hbox (22.25087pt too wide) in paragraph at lines 449--471
+Overfull \hbox (22.25087pt too wide) in paragraph at lines 448--470
 \OT1/cmr/m/n/10 Output of net-work: [[1.31662437e-05] [3.42552722e-06] [2.50440275e-03] [2.50623411e-
  []
 
 
-Overfull \hbox (21.66756pt too wide) in paragraph at lines 449--471
+Overfull \hbox (21.66756pt too wide) in paragraph at lines 448--470
 \OT1/cmr/m/n/10 03] [7.89115799e-09] [3.33512945e-04] [2.93168886e-06] [9.99565501e-01] [6.19048673e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--471
+Underfull \hbox (badness 10000) in paragraph at lines 448--470
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--471
+Underfull \hbox (badness 10000) in paragraph at lines 448--470
 
  []
 
 
-Overfull \hbox (28.88995pt too wide) in paragraph at lines 449--471
+Overfull \hbox (28.88995pt too wide) in paragraph at lines 448--470
 \OT1/cmr/m/n/10 ],[0.94140625],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375
  []
 
 
-Overfull \hbox (34.44556pt too wide) in paragraph at lines 449--471
+Overfull \hbox (34.44556pt too wide) in paragraph at lines 448--470
 \OT1/cmr/m/n/10 ],[0.63671875],[0.88671875],[0.9921875 ],[0.87890625],[0.9921875 ],[0.9921875 ],[0.9921875
  []
 
 
-Overfull \hbox (47.77895pt too wide) in paragraph at lines 449--471
+Overfull \hbox (47.77895pt too wide) in paragraph at lines 448--470
 \OT1/cmr/m/n/10 ],[0.06640625],[0.2578125 ],[0.0546875 ],[0.26171875],[0.26171875],[0.26171875],[0.23046875],
  []
 
 [23 <./assets/mnist_example.png>] [24] (C:\Users\ollie\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 473.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 472.
  (../network/main.py [25] [26])
-Underfull \hbox (badness 10000) in paragraph at lines 477--480
+Underfull \hbox (badness 10000) in paragraph at lines 476--479
 []\OT1/cmtt/m/n/10 History of Neural Networks []$https : / / towardsdatascience . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--480
+Underfull \hbox (badness 10000) in paragraph at lines 476--479
 \OT1/cmtt/m/n/10 a-[]concise-[]history-[]of-[]neural-[]networks-[]2070655d3fec$[] []$https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--480
+Underfull \hbox (badness 10000) in paragraph at lines 476--479
 \OT1/cmtt/m/n/10 / / cs . stanford . edu / people / eroberts / courses / soco / projects /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--484
+Underfull \hbox (badness 10000) in paragraph at lines 481--483
 []\OT1/cmtt/m/n/10 Bias in Artificial Intelligence []$https : / / www . lexalytics . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--488
+Underfull \hbox (badness 10000) in paragraph at lines 485--487
 []\OT1/cmtt/m/n/10 Loss Functions []$https : / / towardsdatascience . com /
  []
 
 
-Overfull \hbox (153.80142pt too wide) in paragraph at lines 486--488
+Overfull \hbox (153.80142pt too wide) in paragraph at lines 485--487
 \OT1/cmtt/m/n/10 understanding-[]the-[]3-[]most-[]common-[]loss-[]functions-[]for-[]machine-[]learning-[]regression-[]23e0ef3e14d3$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--492
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 []\OT1/cmtt/m/n/10 AI generated hypotheses []$https : / / www . scientificamerican . com /
  []
 
 
-Overfull \hbox (36.80243pt too wide) in paragraph at lines 490--492
+Overfull \hbox (36.80243pt too wide) in paragraph at lines 489--491
 \OT1/cmtt/m/n/10 article / ai-[]generates-[]hypotheses-[]human-[]scientists-[]have-[]not-[]thought-[]of/$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--500
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
 []\OT1/cmtt/m/n/10 3Blue1Brown Neural Networks []$https : / / www . youtube . com / playlist ?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--504
+Underfull \hbox (badness 10000) in paragraph at lines 501--503
 []\OT1/cmtt/m/n/10 Convolutional Neural Networks []$https : / / towardsdatascience . com /
  []
 
 
-Overfull \hbox (95.55193pt too wide) in paragraph at lines 502--504
+Overfull \hbox (95.55193pt too wide) in paragraph at lines 501--503
 \OT1/cmtt/m/n/10 a-[]comprehensive-[]guide-[]to-[]convolutional-[]neural-[]networks-[]the-[]eli5-[]way-[]3bd2b1164a53$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+Underfull \hbox (badness 10000) in paragraph at lines 505--507
 []\OT1/cmtt/m/n/10 Von Neumann Architecture []$https : / / en . wikipedia . org / wiki / Von _
  []
 
@@ -875,17 +879,17 @@ Package rerunfilecheck Info: File `"Project Report".out' has not changed.
 (rerunfilecheck)             Checksum: 8ED82BE660B2C9EA04AF44AB27D5E3C4;7567.
  ) 
 Here is how much of TeX's memory you used:
- 33484 strings out of 479334
- 800095 string characters out of 2857084
- 1674233 words of memory out of 3000000
- 50218 multiletter control sequences out of 15000+200000
+ 33492 strings out of 479334
+ 800311 string characters out of 2857084
+ 1674230 words of memory out of 3000000
+ 50226 multiletter control sequences out of 15000+200000
  410785 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,16n,103p,10290b,2102s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ollie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ollie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Project Report.pdf" (29 pages, 777726 bytes).
+Output written on "Project Report.pdf" (29 pages, 778548 bytes).
 PDF statistics:
- 685 PDF objects out of 1000 (max. 8388607)
+ 686 PDF objects out of 1000 (max. 8388607)
  215 named destinations out of 1000 (max. 500000)
  456 words of extra memory for PDF output out of 10000 (max. 10000000)
 
