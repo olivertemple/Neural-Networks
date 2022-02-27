@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1645956846 "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex" "Project Report.pdf" "Project Report" 1645956856
+["pdflatex"] 1645980921 "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex" "Project Report.pdf" "Project Report" 1645980936
   "../network/main.py" 1645548877 3774 e52486717e2362d83bdf7e66fda22dfd ""
   "C:/Users/ollie/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1620209327 11548 93870f6b8d13298b2e7e601d0c4cc1b5 ""
   "C:/Users/ollie/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1619341869 9407463 889c608613aee6593d345564004d0ad3 ""
@@ -204,10 +204,10 @@
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ollie/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463131981 57049 34128738f682d033422ca125f82e5d62 ""
-  "Project Report.aux" 1645956855 10903 69a9b962973e87f5b383bf70f83547af "pdflatex"
-  "Project Report.out" 1645956855 7567 8ed82be660b2c9ea04af44ab27d5e3c4 "pdflatex"
-  "Project Report.tex" 1645956843 48472 01b7b18a8f81970c66144ce43ff32ddd ""
-  "Project Report.toc" 1645956855 4407 d3185b3e7ff024fb7aa6472a2f637e40 "pdflatex"
+  "Project Report.aux" 1645980935 10903 69a9b962973e87f5b383bf70f83547af "pdflatex"
+  "Project Report.out" 1645980935 7567 8ed82be660b2c9ea04af44ab27d5e3c4 "pdflatex"
+  "Project Report.tex" 1645980918 48482 bdb49d0e93695193ac8227c29f4a488c ""
+  "Project Report.toc" 1645980935 4407 d3185b3e7ff024fb7aa6472a2f637e40 "pdflatex"
   "assets/convolutional2.jpeg" 1645828218 178474 76a7d0441d93f5ca635475db9b80ed82 ""
   "assets/loss.png" 1644765201 13900 d93e186af8e6a7bfd3b71dd43b8395cf ""
   "assets/mnist_example.png" 1645555132 3863 3e3d85035f17c785a18a973256904355 ""
@@ -215,10 +215,10 @@
   "assets/neural_network.jpeg" 1637929809 164173 7b7e7ab2aac72f5d94a5f524954958c2 ""
   "assets/perceptron.png" 1638194219 69597 a6b4847a1ee950c4107d6d11db6e9020 ""
   "assets/sample_predictions.png" 1644959525 9619 402f3ef1dc8d43ad4707acd904478842 ""
-  "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex" 1645956843 48472 01b7b18a8f81970c66144ce43ff32ddd ""
+  "c:/Users/ollie/OneDrive - Exeter College/Neural Networks/Project Report/Project Report.tex" 1645980918 48482 bdb49d0e93695193ac8227c29f4a488c ""
   (generated)
   "Project Report.aux"
   "Project Report.pdf"
-  "Project Report.log"
   "Project Report.toc"
   "Project Report.out"
+  "Project Report.log"

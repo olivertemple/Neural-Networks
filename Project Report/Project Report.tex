@@ -109,7 +109,7 @@ Where $\textbf{y}$ is the output, $\textbf{W}$ is a vector of the weights, $\tex
 \end{figure}
 
 \subsubsection{Feed Forward Neural Network}
-A feed forward neural network is a neural network that is constructed from a set of interconnected layers. Each neuron in a layer is connect to all of the neurons in the previous layer, and the output of each layer is used as the input to the next layer. The data travels in only one direction, making them useful only for linear classification. Each connection has a weight, and each neuron has a bias, which are used to calculate the output of the network.
+A feed forward neural network is a neural network that is constructed from a set of interconnected layers. Each neuron in a layer is connected to all of the neurons in the previous layer, and the output of each layer is used as the input to the next layer. The data travels in only one direction, making them useful only for linear classification. Each connection has a weight, and each neuron has a bias, which are used to calculate the output of the network.
 \begin{equation}
     \textbf{y}_n=\sigma{(\textbf{W}_n\cdot\textbf{y}_{n-1} + \textbf{b}_n)}
     \label{eq:feed-forward}
@@ -129,7 +129,7 @@ A convolutional neural network\cite{convolutionalnn} (shown in Figure~\ref{fig:c
 \end{figure}
 
 \subsubsection{Recurrent Neural Network}
-In a recurrent neural network, the output of a layer is saved and fed back into the input to help with prediction. This is used for time series prediction, where the network can learn to predict the future. For example, given historical data, the network can attempts to predict the future.
+In a recurrent neural network, the output of a layer is saved and fed back into the input to help with prediction. This is used for time series prediction, where the network can learn to predict the future. For example, given historical data, the network can attempt to predict the future.
 
 \subsubsection{Long Short-Term Memory}
 A Long Short-Term Memory (LSTM) neural network is a recurrent neural network that uses a long term memory to predict the future. LSTM neurons include a memory cell that can maintain information for long periods of time. A set of gates are used to control when information enters the memory, when it is output, and when it is forgotten.
@@ -159,7 +159,7 @@ At the same time, a paper was published that suggested that neural networks coul
 \\\\
 Adding to this, the early success of some neural networks led to an exaggeration of the potential of neural networks, leading to promises that could not be fulfilled. Furthermore, philosophical questions led to fear, with writers pondering the effect that the so-called "thinking machines" would have on humanity, ideas which are still around today.
 \\\\
-In 1982, John Hopfield of Caltech published a paper theorising that connections between neurons could be two way, instead of the one way that they had been until this point. This paper renewed interest int he field. This was coupled with Reilly and Cooper using a "Hybrid Network" in the same year, with multiple layers using different problem solving strategies.
+In 1982, John Hopfield of Caltech published a paper theorising that connections between neurons could be two way, instead of the one way that they had been until this point. This paper renewed interest in the field. This was coupled with Reilly and Cooper using a "Hybrid Network" in the same year, with multiple layers using different problem solving strategies.
 \\\\
 Also in 1982, at a US-Japan conference, Japan announced a new effort on neural networks, and US papers generated worry that the US could be left behind. This led to more funding and more research in the field.
 \\\\
@@ -319,7 +319,7 @@ Cross entropy loss, often called log loss, is a loss function that is used for m
 where $n$ is the number of samples we are testing against, $y$ is the desired output of the network, and $\hat{y}$ is the actual output of the network.
 
 \subsection{Backpropagation}
-Backpropagation is the porcess in which the data moves backwards through the network, adjusting the weights and biases to minimize the loss function. To do so, the derivative o the loss function must first be calculated, as this will allow us to know whether to increase or decrease the weights and biases, and by how much.
+Backpropagation is the porcess in which the data moves backwards through the network, adjusting the weights and biases to minimize the loss function. To do so, the derivative of the loss function must first be calculated, as this will allow us to know whether to increase or decrease the weights and biases, and by how much.
 \begin{figure}[h!]
     \begin{center}
         \begin{tikzpicture}
