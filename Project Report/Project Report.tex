@@ -240,7 +240,7 @@ The sigmoid function(Figure~\ref{fig:sigmoid_function}) takes any input, $x$ and
 
 
 \subsubsection{Tanh}
-Similar to the sigmoid function, the tanh function(Figure~\ref{fig:tanh}) takes any input, $x$ and translates it to a value between 0 and 1. The equation is:
+Similar to the sigmoid function, the tanh function(Figure~\ref{fig:tanh}) takes any input, $x$ and translates it to a value between -1 and 1. The equation is:
 \begin{equation}
     \tanh(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}
     \label{eq:tanh}
@@ -303,7 +303,7 @@ The loss function is used to calculate how good a model is. In order to calculat
 \end{itemize}
 
 \subsubsection{Mean Squared Error}
-The MSE loss function is calculate as the average of the squared difference between the network's output and the desired output. It is used when there is only one output for the network. The equation is:
+The MSE loss function is calculate as the average of the squared difference between the network's output and the desired output. The equation is:
 \begin{equation}
     \texttt{MSE} = \frac{1}{n} \sum_{i=1}^{n} (\hat{y}_i - y_i)^2
     \label{eq:MSE}
@@ -313,13 +313,13 @@ where $n$ is the number of samples we are testing against, $y$ is the desired ou
 \subsubsection{Cross Entropy Loss}
 Cross entropy loss, often called log loss, is a loss function that is used for more complex models. Each predicted output is compared to the desired output and a score is calculated that penalizes the output based on the difference between the two. The penalty is logarithmic, meaning smaller score for smaller differences, and larger score for larger differences. The equation is:
 \begin{equation}
-    \texttt{CEL} = -\sum_{i=1}^{n}(y_i\times\log(\hat{y}_i))
+    \texttt{CEL} = -\frac{1}{n}\sum_{i=1}^{n}(y_i\times\log(\hat{y}_i))
     \label{eq:CEL}
 \end{equation}
 where $n$ is the number of samples we are testing against, $y$ is the desired output of the network, and $\hat{y}$ is the actual output of the network.
 
 \subsection{Backpropagation}
-Backpropagation is the porcess in which the data moves backwards through the network, adjusting the weights and biases to minimize the loss function. To do so, the derivative of the loss function must first be calculated, as this will allow us to know whether to increase or decrease the weights and biases, and by how much.
+Backpropagation is the process in which the data moves backwards through the network, adjusting the weights and biases to minimize the loss function. To do so, the derivative of the loss function must first be calculated, as this will allow us to know whether to increase or decrease the weights and biases, and by how much.
 \begin{figure}[h!]
     \begin{center}
         \begin{tikzpicture}
@@ -332,9 +332,9 @@ Backpropagation is the porcess in which the data moves backwards through the net
     \label{fig:loss-vs-weights}
 \end{figure}
 \\\\
-For example, if a graph of loss against weights is plotted, as seen in Figure~\ref{fig:loss-vs-weights}, the minimum of the function is calculated using the derivative. However, as the loss function is usually in many more dimensions, the minimum cannot be calculated exactly, as small steps towards the minimum are required. 
+For example, if a graph of loss against weights is plotted, as seen in Figure~\ref{fig:loss-vs-weights}, the minimum of the function is calculated using the derivative. However, as the loss function is usually in many more dimensions, the minimum cannot be calculated exactly, and small steps towards the minimum are required. 
 \\\\
-When we have the derivative of the loss function, we know whether to increase or decrease the weights and biases due to the sign of the gradient. The weights abd biases can be changed proportionally to the gradient to prevent missing the minimum of the function.
+When we have the derivative of the loss function, we know whether to increase or decrease the weights and biases due to the sign of the gradient. The weights and biases can be changed proportionally to the gradient to prevent missing the minimum of the function.
 \\\\
 This process is repeated many times over the course of training, with the goal of setting the weights and biases to the values that give the lowest loss of the network.
 \subsection{Training}
@@ -355,7 +355,7 @@ Before training the model, we have to define the structure. A neural network is 
 \subsubsection{Layers}
 As the input images are 28x28, our input layer will consist of 784 neurons, allowing for each neuron to represent a single pixel. The output layer will consist of 10 neurons, one for each possible digit. We will also be using a hidden layer of 350 neurons. The size of the hidden layer can be changed, but 350 was chosen as it is between 748 and 10. If the task was more complex, more hidden layers with larger sizes could be used, however, that would not be necessary for this project, and would slow down the training process.
 \subsubsection{Loss Function}
-We also need to define our loss function. In this model, we will be using the Mean Squared Error (MSE)\ref{eq:MSE} loss function, as it provides a good balance between accuracy and speed.
+We also need to define our loss function. In this model, we will be using the Mean Squared Error (MSE Equation~\ref{eq:MSE}) loss function, as it provides a good balance between accuracy and speed.
 \subsubsection{Activation Function}
 Finally, we need to define our activation function, and its derivative. In this model, we will be using the sigmoid function (Equation~\ref{eq:sigmoid}), as it also provides a good balance between accuracy and speed. We also need the derivative of our activation function for back propagation. The derivative of the sigmoid function is defined in Equation~\ref{eq:sigmoid-derivative}.
 \begin{equation}
@@ -365,7 +365,7 @@ Finally, we need to define our activation function, and its derivative. In this 
 
 
 \subsection{Training the Model}
-To train the model, the data is split up into equal size batches. This saves us from running through the entire dataset multiple times. Each batch is then passed through the network, and the weights and biases are adjusted to minimize the loss - This is called an Epoch. After each Epoch, the loss of the neural network is calculated and used to backpropogate through the network. However, when training the neural network, there are several things we need to take into account. A graph of the loss over each epoch can be seen in \ref{fig:loss}
+To train the model, the data is split up into equal size batches. This saves us from running through the entire dataset multiple times. Each batch is then passed through the network, and the loss is calculated - This is called an Epoch. After each Epoch, the loss is used to backpropagate through the network. However, when training the neural network, there are several things we need to take into account. A graph of the loss over each epoch can be seen in \ref{fig:loss}
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{assets/loss.png}
     \caption{Loss of neural network over epochs}
@@ -381,7 +381,7 @@ The optimization of neural networks has led them to make use of many dimensions 
 \end{quotation}
 
 \subsubsection{Local Minima}
-When minimizing the loss function, the derivative is found to calculate weather to increase the weights and bias. This does allow us to improve our model, however, it may not lead us to the optimal solution, as a local minimum may exist.
+When minimizing the loss function, the derivative is found to calculate whether to increase the weights and bias. This does allow us to improve our model, however, it may not lead us to the optimal solution, as a local minimum may exist.
 % [0.6478276249887084, 0.28551481908826687, 0.21974857429117917, 0.1758817580463027, 0.1465148527377736, 0.12774579912257283, 0.11215119620165559, 0.09928242960023378, 0.09033128010061409, 0.08122211917917103, 0.07357034309586483, 0.06754901132453034, 0.06237644694749512, 0.05664522448596336, 0.052354815337848644]
 
 \subsection{Testing the Model}
@@ -393,12 +393,12 @@ Once our model has been trained, it is important to test it on unseen data so th
 \end{figure}
  
 \subsection{Discussion of Results}
-As shown in the testing, the model is not perfect. To improve the model, more layers could be added, the loss function could be altered or the activations function could be changed. If the model were to be used in a real world application, it would be important to make sure that the model was very accurate, and implementing the improvements mentioned above would be much easier if a library like tensorflow or pytorch was used. 
+As shown in the testing, the model is not perfect. To improve the model, more layers could be added, the loss function could be altered or the activations function could be changed. If the model were to be used in a real world application, it would be important to make sure that the model was very accurate, and implementing the improvements mentioned above would be much easier if a library like tensorflow\cite{tensorflow} or pytorch\cite{pytorch} was used. They have pre-defined models that can be highly customizable, and make the process of training the model simpler as knowledge of how neural networks work from a low level is not required. 
 \newpage
 \section{Conclusion}
-To conclude, neural networks are complex models used for many different tasks. There are many different types of neural networks that each have their own merits and downfalls, that are best suited for certain tasks. Although it is possible to code them from scratch, it is much easier and quicker to use a library, as they are very well optimized, and already have complex loss and activation functions implemented as well as other types of networks.
+To conclude, neural networks are complex models used for many different tasks. Each of the many types of neural network has its own respective merits and downfalls. Different types of neural network will be best suited to specific tasks. Although it is possible to code them from scratch, it is much easier and quicker to use a library, as they are very well optimized, and already have complex loss and activation functions implemented as well as other types of networks.
 \\\\
-By completing this project, I have gained knowledge of how neural networks work from a high level, as well as how the most basic of neural networks work from a low level. I have also gained an understanding of what neural networks are used for as well as the history of how they came about. I have also learned about the issues that we need to be wary of when training a neural network.
+By completing this project, I have gained knowledge of how neural networks work from a high level (complex ideas abstracted away for simplicity), as well as how the most basic of neural networks work from a low level (including all of the details). I have also gained an understanding of what neural networks are used for as well as the history of how they came about. I have also learned about the issues that we need to be wary of when training a neural network.
 \newpage
 \section{Appendix}
 \subsection{Vector Dot Product}
@@ -463,12 +463,18 @@ Output of network:
  [6.19048673e-04]
  [2.45914335e-05]]
 \\\\
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c||c c c c c c c c c c}
+    output & 1.3e-05 & 3.4e-06 & 0.0025 & 0.0025 & 7.9e-09 & 0.00033 & 2.9e-06 & \textbf{0.99} & 0.00062 & 2.5e-05 \\
+    prediction & 0 & 1 & 2 & 3 & 4 & 5 & 6 & \textbf{7} & 8 & 9 \\
+\end{tabular}}
+\\\\
 Prediction: 7
 \\\\
 pixel patterns (input to network): 
 [[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.328125  ],[0.72265625],[0.62109375],[0.58984375],[0.234375  ],[0.140625  ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.8671875 ],[0.9921875 ],[0.9921875 ],[0.9921875 ],[0.9921875 ],[0.94140625],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.7734375 ],[0.6640625 ],[0.203125  ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.26171875],[0.4453125 ],[0.28125   ],[0.4453125 ],[0.63671875],[0.88671875],[0.9921875 ],[0.87890625],[0.9921875 ],[0.9921875 ],[0.9921875 ],[0.9765625 ],[0.89453125],[0.9921875 ],[0.9921875 ],[0.546875  ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.06640625],[0.2578125 ],[0.0546875 ],[0.26171875],[0.26171875],[0.26171875],[0.23046875], [0.08203125],[0.921875  ],[0.9921875 ],[0.4140625 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.32421875],[0.98828125],[0.81640625],[0.0703125 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.0859375 ],[0.91015625],[0.99609375],[0.32421875],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.50390625],[0.9921875 ],[0.9296875 ],[0.171875  ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.23046875],[0.97265625],[0.9921875 ],[0.2421875 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.51953125],[0.9921875 ],[0.73046875],[0.01953125],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.03515625],[0.80078125],[0.96875   ],[0.2265625 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.4921875 ],[0.9921875 ],[0.7109375 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.29296875],[0.98046875],[0.9375    ],[0.22265625],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.07421875],[0.86328125],[0.9921875 ],[0.6484375 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.01171875],[0.79296875],[0.9921875 ],[0.85546875],[0.13671875],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.1484375 ],[0.9921875 ],[0.9921875 ],[0.30078125],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.12109375],[0.875     ],[0.9921875 ],[0.44921875],[0.00390625],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.51953125],[0.9921875 ],[0.9921875 ],[0.203125  ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.23828125],[0.9453125 ],[0.9921875 ],[0.9921875 ],[0.203125  ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.47265625],[0.9921875 ],[0.9921875 ],[0.85546875],[0.15625   ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.47265625],[0.9921875 ],[0.80859375],[0.0703125 ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ],[0.        ]]
 
-\subsection{Code}
+\subsection{Python 3.9.10 Code}
 \lstinputlisting[language=python, linewidth=\linewidth]{../network/main.py}
 
 \begin{thebibliography}{9}
@@ -504,6 +510,14 @@ pixel patterns (input to network):
     \bibitem{vonneumann}
     \texttt{Von Neumann Architecture}
     \url{https://en.wikipedia.org/wiki/Von_Neumann_architecture}
+
+    \bibitem{tensorflow}
+    \texttt{TensorFlow}
+    \url{https://www.tensorflow.org/resources/learn-ml?gclid=Cj0KCQiA64GRBhCZARIsAHOLriIX8Z76A8AJhOpEWU0Nl9PMrZ5kUqc4DUuybvBHsAmIhz0OeBNlyYoaAmezEALw_wcB}
+
+    \bibitem{pytorch}
+    \texttt{PyTorch}
+    \url{https://pytorch.org/}
 \end{thebibliography}
 \end{document}
 
