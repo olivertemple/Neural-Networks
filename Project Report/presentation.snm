@@ -1,0 +1,17 @@
+\beamer@slide {fig:neural_network}{3}
+\beamer@slide {eq:perceptron}{5}
+\beamer@slide {fig:perceptron}{7}
+\beamer@slide {eq:feed-forward}{8}
+\beamer@slide {fig:convolutional_neural_network}{10}
+\beamer@slide {eq:Widrow-Hoff}{11}
+\beamer@slide {fig:multilayer-perceptron}{14}
+\beamer@slide {eq:forward-propagation}{16}
+\beamer@slide {eq:sigmoid}{20}
+\beamer@slide {eq:tanh}{23}
+\beamer@slide {eq:relu}{26}
+\beamer@slide {eq:leaky-relu}{29}
+\beamer@slide {eq:MSE}{32}
+\beamer@slide {eq:CEL}{34}
+\beamer@slide {eq:sigmoid-derivative}{38}
+\beamer@slide {fig:loss}{39}
+\beamer@slide {fig:sample-predictions}{41}

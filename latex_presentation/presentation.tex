@@ -20,74 +20,36 @@
 
 \begin{document}
 \maketitle
-%Hello and welcome to my presentation about neural networks.
-% To start with I am going to briefly go over the objectives of this project, then I will talk about the different types of neural network, then about how then work and then finnish with how to code one and the results that I got.
-\begin{frame}{Overview}
-    \begin{itemize}
-        \item Objectives
-        \item What a neural network is
-        \item Types of neural networks
-        \item How Neural Networks Work
-        \item Coding a Neural Network
-        \item Results
-        \item Conclusion
-    \end{itemize}
-\end{frame}
 
-%The main objective of this project was to learn about neural networks in any way possible, and I decided that the best way to do that would be to code my own neural network from scratch.
-% I will start by exploring the different types of neural networks and their uses.
-% I will then go onto explore how they work from a high level and conclude with how to code one to classify handwritten digits from 0-9.
-\begin{frame}{Objectives}
-    \begin{itemize}
-        \item Explore the different types of neural network models
-        \item Explore the uses of different types of neural network models
-        \item Explore how a neural network works from a high level
-        \item Explore how to use a neural network to classify handwritten digits from 0-9
-        \item Code a neural network to classify handwritten digits from 0-9
-    \end{itemize}
-\end{frame}
+% intro - "What is a neural network?..."  My name is Oliver Temple and I am here to talk to you about neural networks. You may well have heard the term neural network before, you may even know what they are, but I am going to start from the beginning and explain what a neural network is and how one of the most basic models works.
 
-% Neural networks are complex computational models that can be used to perform a wide range of tasks, such as pattern recognition, image recognition and computer vision.
-% Neural network are constructed from a set of interconnected neurons, formed into layers, which are capable of processing and responding to inputs and producing outputs. 
-\begin{frame}{What is Neural Network Is}
-\begin{multicols}{2}
-    \begin{itemize}
-        \item Complex computational model
-        \item Interconnected layers
-        \item Each neuron has a bias
-        \item Each connection has a weight
-    \end{itemize}
+% Slide 1 - A neural network is a complex computational model that can be used to perform a wide range of tasks from image recognition to classification and prediction. They are constructed from interconnected neurons organized into layers, as shown in this figure.
+
+\begin{frame}{What a Neural Network Is}
     \begin{center}
-        \includegraphics[width=0.5\textwidth]{images/neural_network}
+        \includegraphics[width=\textwidth]{images/neural_network}
         \captionof{figure}{Representation of a neural network}
     \end{center}
-\end{multicols}
 \end{frame}
 
-%There are many different types of neural network, and each type has its own properties that make them more specialized and useful for specific tasks.
-% The most common types of neural network are: Perceptron, Feed Forward Neural Network, Multilayer Perceptron, and Convolutional Neural Network.
-% All of the different types that I am about to describe would be implemented in software, using vectors and matrices to store the weights and biases of each layer.
+
+
+% Slide 2 - Neural networks are able to be used for such a wide variety of uses as there are so many variations of how the neurons can be organized and connected to each other. Some of the most common models are the perceptron, the feed forward neural network and the multi-layer neural network. and biases of each layer.
 \begin{frame}{Types of Neural Network}
     \begin{itemize}
         \item Perceptron
         \item Feed Forward Neural Network
         \item Multi-layer Perceptron
-        \item Convolutional Neural Network
     \end{itemize}
 \end{frame}
 
-%A perceptron model, often referred to as a neuron, is one of the simplest and oldest types of neural network.
-% It is the smallest unit of a neural network and accepts inputs ranging between 0 and 1.
-% The weight that each connection has is used to calculate the output by taking the vector dot product of the input vector and the weight vector.
-% The bias is then added, and the result is passed through the activation function to get the output, as shown in this equation.
+%Slide 3 - A perceptron, often referred to as a neuron, is one of the simplest and oldest forms of neural networks. It accepts multiple inputs ranging from 0 to 1, and uses the weight that each connection has to calculate the output by taking the vector dot product of the inputs and the weights. The bias is then added and the result is then passed through an activation function to give the output. 
 \begin{frame}{Types of Neural Network}{Perceptron}
 \begin{multicols}{2}
-    \begin{itemize}
-        \item Simplest component of a neural network
-        \item Inputs between 0 and 1
-        \item $\textbf{y} = \sigma(\textbf{W}\cdot\textbf{x} + b)$
-        \item Where $\textbf{y}$ is the output, $\textbf{W}$ is a vector of the weights, $\textbf{x}$ is a vector of the inputs, $b$ is the bias and $\sigma$ is the activation function.
-    \end{itemize}
+    \begin{equation}
+        \textbf{y} = \sigma(\textbf{W}\cdot\textbf{x} + b)
+    \end{equation}
+    Where $\textbf{y}$ is the output, $\textbf{W}$ is a vector of the weights, $\textbf{x}$ is a vector of the inputs, $b$ is the bias and $\sigma$ is the activation function.
     \begin{center}
         \includegraphics[width=0.5\textwidth]{images/perceptron}
         \captionof{figure}{Perceptron}
@@ -95,18 +57,13 @@
 \end{multicols}
 \end{frame}
 
-%A feed forward neural network is a neural network that is constructed from a set of interconnected layers.
-% Each neuron in a layer is connected to all of the neurons in the previous layer and the output of each layer is used as the input for the next layer.
-% The data travels in only one direction, making them use ful only for linear classification. Each connection has a weight and each neuron as a bias, which are used to calculate the output of the network.
-% The output of the nth layer can be calculated by taking the dot product of the layers weight matrix and the output vector of the previous layer, adding the bias vector for the layer and applying the activation function, as seen in this equation.  
+%Slide 4 - A feed forward neural network is a neural network that is constructed from interconnected layers of neurons. Each neuron in a layer is connected to every neuron in the previous layer and the output of the previous layer is used as the input to the next layer. The data only travels in one direction, meaning that it cannot be trained, so is only useful for linear classification. The output of the nth layer is calculated by taking the dot product of the weight matrix and the input vector and adding the bias. The result is then passed through an activation function to give the output.
 \begin{frame}{Types of Neural Network}{Feed Forward Neural Network}
 \begin{multicols}{2}
-    \begin{itemize}
-        \item Set of interconnected layers
-        \item Linear classification only
-        \item $\textbf{y}_n=\sigma{(\textbf{W}_n\cdot\textbf{y}_{n-1} + \textbf{b}_n)}$
-        \item Where $\textbf{y}_n$ is the output vector of the nth layer, $\textbf{W}_n$ is the weight matrix of the nth layer, $\textbf{y}_{n-1}$ is the output vector of the previous layer, $\textbf{b}_n$ is the bias vector of the nth layer, and $\sigma$ is the activation function.
-    \end{itemize}
+    \begin{equation}
+        \textbf{y}_n=\sigma{(\textbf{W}_n\cdot\textbf{y}_{n-1} + \textbf{b}_n)}
+    \end{equation}
+    Where $\textbf{y}_n$ is the output vector of the nth layer, $\textbf{W}_n$ is the weight matrix of the nth layer, $\textbf{y}_{n-1}$ is the output vector of the previous layer, $\textbf{b}_n$ is the bias vector of the nth layer, and $\sigma$ is the activation function.
     \begin{center}
         \includegraphics[width=0.5\textwidth]{images/feed forward}
         \captionof{figure}{Feed Forward Neural Network}
@@ -114,35 +71,13 @@
 \end{multicols}
 \end{frame}
 
-
-%A multi-layer perceptron is much like a feed forward neural network, in the sense that it is made up of interconnected layers of neurons, however, the data can travel both forwards and backwards through the network allowing for the network to be trained.
-% The process in which data travels backwards through the network is called backpropagation and involves altering the weights and biases of the network.
-% The output of the network is calculated the same as a feed forward neural network.
 \begin{frame}{Types of Neural Network}{Multi-layer Perceptron}
-    \begin{itemize}
-        \item Much like a feed forward network
-        \item Data can travel backwards as well as forwards
-        \item Allows for training of the network
-        \item $\textbf{y}_n=\sigma{(\textbf{W}_n\cdot\textbf{y}_{n-1} + \textbf{b}_n)}$
-        \item Where $\textbf{y}_n$ is the output vector of the nth layer, $\textbf{W}_n$ is the weight matrix of the nth layer, $\textbf{y}_{n-1}$ is the output vector of the previous layer, $\textbf{b}_n$ is the bias vector of the nth layer, and $\sigma$ is the activation function.
-    \end{itemize}
+    \begin{equation}
+        \textbf{y}_n=\sigma{(\textbf{W}_n\cdot\textbf{y}_{n-1} + \textbf{b}_n)}
+    \end{equation}
+    Where $\textbf{y}_n$ is the output vector of the nth layer, $\textbf{W}_n$ is the weight matrix of the nth layer, $\textbf{y}_{n-1}$ is the output vector of the previous layer, $\textbf{b}_n$ is the bias vector of the nth layer, and $\sigma$ is the activation function.
 \end{frame}
 
-
-% A convolutional neural network is a more complex model that is often used for image recognition.
-% It contains a three dimensional arrangement of neurons, with each neuron on the first layer only processing information from a small part of the image.
-\begin{frame}{Types of Neural Network}{Convolutional Neural Network}
-    \begin{multicols}{2}
-        \begin{itemize}
-            \item Often used for image recognition
-            \item Each neuron on the first layer only processes information from a small part of the image
-        \end{itemize}
-        \begin{center}
-            \includegraphics[width=0.5\textwidth]{images/convolutional2}
-            \captionof{figure}{Convolutional Neural Network}
-        \end{center}
-    \end{multicols}
-\end{frame}
 
 % At its core, a neural network is a collection of neurons, formed into layers, that are all interconnected.
 % Each neuron has its own bias and each connection has its own weight.
@@ -156,7 +91,7 @@
 \end{frame}
 
 % The structure of the network is the first thing that must be defined.
-% The input layer must consist of the same number of neurons sa there are data points (e.g. one neuron per pixel in an image), and the output layer must consist of the same number of neurons as there are classification labels (the total number of outputs).
+% The input layer must consist of the same number of neurons as there are data points (e.g. one neuron per pixel in an image), and the output layer must consist of the same number of neurons as there are classification labels (the total number of outputs).
 % There can be any number of hidden layers, which can have any number of neurons.
 %  The size and number of hidden layers should be varied to determine what gives the best results.
 \begin{frame}{How Neural Networks Work}{Structure}
@@ -463,3 +398,5 @@
     \end{itemize}
 \end{frame}
 \end{document}
+
+
